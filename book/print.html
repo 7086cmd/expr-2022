@@ -1,0 +1,366 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>暑假实验报告合集 By 吴承宇</title>
+        <meta name="robots" content="noindex" />
+
+
+        <!-- Custom HTML head -->
+        
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="index.html"><strong aria-hidden="true">1.</strong> 总览</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> 实验报告</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="ex1/index.html"><strong aria-hidden="true">2.1.</strong> 鸡蛋泡醋</a></li><li class="chapter-item expanded "><a href="ex2/index.html"><strong aria-hidden="true">2.2.</strong> 杆秤制作</a></li><li class="chapter-item expanded "><a href="ex3/index.html"><strong aria-hidden="true">2.3.</strong> 自制酸碱指示剂并实验它在酸性和碱性、中性溶液中各显什么颜色</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ex3/main.html"><strong aria-hidden="true">2.3.1.</strong> 自制酸碱指示剂并且验证</a></li><li class="chapter-item expanded "><a href="ex3/extend1.html"><strong aria-hidden="true">2.3.2.</strong> 使用指示剂测试家里面其他物品的酸碱性（探究）</a></li><li class="chapter-item expanded "><a href="ex3/extend2.html"><strong aria-hidden="true">2.3.3.</strong> 番外：酸碱中和</a></li></ol></li><li class="chapter-item expanded "><a href="ex4/index.html"><strong aria-hidden="true">2.4.</strong> 金属生锈的条件</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ex4/prepare.html"><strong aria-hidden="true">2.4.1.</strong> 实验准备</a></li><li class="chapter-item expanded "><a href="ex4/day1.html"><strong aria-hidden="true">2.4.2.</strong> 观察第一天</a></li><li class="chapter-item expanded "><a href="ex4/day4.html"><strong aria-hidden="true">2.4.3.</strong> 观察第四天</a></li><li class="chapter-item expanded "><a href="ex4/final.html"><strong aria-hidden="true">2.4.4.</strong> 观察结果</a></li><li class="chapter-item expanded "><a href="ex4/extend.html"><strong aria-hidden="true">2.4.5.</strong> 生活中的防锈</a></li></ol></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">暑假实验报告合集 By 吴承宇</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="暑假实验报告合集-by-吴承宇"><a class="header" href="#暑假实验报告合集-by-吴承宇">暑假实验报告合集 By 吴承宇</a></h1>
+<p>本次暑假一共有 4 个实验，分别是：</p>
+<ol>
+<li><a href="./ex1/index.html">鸡蛋泡醋</a></li>
+<li><a href="./ex2/index.html">杆秤制作</a></li>
+<li><a href="./ex3/index.html">自制酸碱指示剂并实验它在酸性和碱性、中性溶液中各显什么颜色</a></li>
+<li><a href="./ex4/index.html">金属生锈的条件</a></li>
+</ol>
+<p>实验者：吴承宇</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="鸡蛋泡醋"><a class="header" href="#鸡蛋泡醋">鸡蛋泡醋</a></h1>
+<p>实验者：吴承宇
+日期：2022-7-26 ~ 2022-7-27</p>
+<h3 id="实验过程"><a class="header" href="#实验过程">实验过程</a></h3>
+<p>首先，准备一枚<em>鸡蛋</em>、一个<em>杯子</em>(盛放)、一瓶<em>白醋</em>。</p>
+<p><img src="ex1/../assets/CaCO3/IMG_20220727_130743.jpg" alt="prepare" /></p>
+<p>将白醋缓慢地倾倒入杯子，在大约 1/3 处停止倾倒。
+将鸡蛋缓慢地放入，然后合上杯子。</p>
+<p><img src="ex1/../assets/CaCO3/IMG_20220727_130936.jpg" alt="mixing" /></p>
+<h4 id="刚刚放入的时候"><a class="header" href="#刚刚放入的时候">刚刚放入的时候</a></h4>
+<p><img src="ex1/../assets/CaCO3/IMG_20220727_131035.jpg" alt="1mins" /></p>
+<h4 id="25分钟以后"><a class="header" href="#25分钟以后">25分钟以后</a></h4>
+<p><img src="ex1/../assets/CaCO3/IMG_20220727_131157.jpg" alt="25mins" /></p>
+<h4 id="24小时以后"><a class="header" href="#24小时以后">24小时以后</a></h4>
+<img alt="24h" src="ex1/../assets/CaCO3/IMG_20220728_131249.jpg" style="zoom: 60%" />
+<p>将鸡蛋从杯子中取出，发现蛋壳几乎已经消失，鸡蛋的膜仍然存在。
+从中得出，鸡蛋壳中的物质可以和白醋发生反应，产生气体。</p>
+<p>经过验证，该气体为\( \text{CO}_{\text{2} } \)</p>
+<style>
+    img {
+        zoom: 60%;
+    }
+</style>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="杆秤制作"><a class="header" href="#杆秤制作">杆秤制作</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="自制酸碱指示剂并实验它在酸性和碱性中性溶液中各显什么颜色"><a class="header" href="#自制酸碱指示剂并实验它在酸性和碱性中性溶液中各显什么颜色">自制酸碱指示剂并实验它在酸性和碱性、中性溶液中各显什么颜色</a></h1>
+<p>实验者：吴承宇
+日期：2022-8-9</p>
+<blockquote>
+<p>该实验步骤较多，将分页面进行介绍。请看下一页。</p>
+</blockquote>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="自制酸碱指示剂并且验证"><a class="header" href="#自制酸碱指示剂并且验证">自制酸碱指示剂并且验证</a></h1>
+<p>实验准备：一个紫甘蓝，几朵牵牛花、美人蕉和一个红萝卜。
+以及，4个针筒、4个小碗和20个杯子。
+盐，糖还有鸡精。
+一瓶白醋，一包小苏打，一瓶矿泉水</p>
+<p><img src="ex3/../assets/pH/IMG_20220809_100741.jpg" alt="prepare" /></p>
+<p>首先，将紫甘蓝和红萝卜剥皮、摘下牵牛花和美人蕉的花瓣。将其各自捣碎，如果可以放到榨汁机里面兑少量水（或兑少量水后使用擀面杖捣碎），各自过滤放到各自的碗里，贴好标签。</p>
+<p>以<strong>紫甘蓝</strong>、<strong>牵牛花</strong>、<strong>红萝卜</strong>、<strong>美人蕉</strong>的顺序排列3个小碗。</p>
+<p><img src="ex3/../assets/pH/IMG_20220809_102739.jpg" alt="prepare" /></p>
+<p>将白醋和矿泉水分别倒入一个空杯子，约4/5处。</p>
+<p>在第三个杯子中，放入小苏打，并且倒入水，搅拌至全部溶解。</p>
+<p>以<strong>白醋</strong>、<strong>小苏打水</strong>和<strong>矿泉水</strong>的顺序排列3个杯子。</p>
+<h3 id="紫甘蓝作为酸碱指示剂"><a class="header" href="#紫甘蓝作为酸碱指示剂">紫甘蓝作为酸碱指示剂</a></h3>
+<p>将 3 个杯子中的液体分别取约 1/4 倒入一个空杯。</p>
+<p>将紫甘蓝汁使用针筒吸收至针筒 1/3 处，滴入白醋中。
+再取 1/3 筒，滴入苏打水溶液中。
+再取 1/3 筒，滴入矿泉水中。</p>
+<p>以上操作执行 3 次，发现：</p>
+<ol>
+<li>原来透明的白醋变成了粉红色</li>
+<li>原来透明的苏打水变成了青绿色</li>
+<li>原来透明的矿泉水变成了紫色</li>
+</ol>
+<hr />
+<p>使用<strong>牵牛花</strong>、<strong>红萝卜</strong>、<strong>美人蕉</strong>按照上述步骤操作，发现：</p>
+<div class="table-wrapper"><table><thead><tr><th>植物</th><th>原来溶液颜色</th><th>滴入白醋中后</th><th>滴入苏打水中后</th><th>滴入矿泉水中后</th></tr></thead><tbody>
+<tr><td>紫甘蓝</td><td>紫色</td><td>粉红色</td><td>青绿色</td><td>紫色</td></tr>
+<tr><td>牵牛花</td><td>棕红色</td><td>嫩红色</td><td>茶绿色</td><td>淡棕色</td></tr>
+<tr><td>红萝卜</td><td>淡粉色</td><td>粉红色</td><td>白色（微紫）</td><td>淡粉色</td></tr>
+<tr><td>美人蕉</td><td>褐色</td><td>淡褐色</td><td>茶褐色</td><td>褐色</td></tr>
+</tbody></table>
+</div>
+<p><img src="ex3/../assets/pH/IMG_20220809_104636.jpg" alt="pH" /></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="使用指示剂测试家里面其他物品的酸碱性探究"><a class="header" href="#使用指示剂测试家里面其他物品的酸碱性探究">使用指示剂测试家里面其他物品的酸碱性（探究）</a></h1>
+<p>使用 <strong>紫甘蓝溶液</strong> 作为酸碱指示剂，因为其颜色分明而且辨析度高。</p>
+<ol>
+<li>将紫甘蓝溶液滴入食盐水溶液中(\( \text{NaCl} \))，发现呈现紫色</li>
+<li>将紫甘蓝溶液滴入糖水溶液中(\( \text{C}_{\text{6} }\text{H} _{10}\text{O} _\text{5} \))，发现略微呈现蓝色（主体为紫色）</li>
+<li>将紫甘蓝溶液滴入鸡精溶液中(略 <del>(是我不会)</del> )，发现呈现蓝色</li>
+</ol>
+<p>因此，可以（粗略地）得出，
+食盐水溶液呈<strong>中性</strong>，糖水溶液呈<strong>弱碱性</strong>，鸡精溶液呈<strong>碱性</strong>。</p>
+<p><img src="ex3/../assets/pH/IMG_20220809_105205.jpg" alt="" /></p>
+<blockquote>
+<p>如果觉得不对应该是拍照视角不好， <del>把屏幕扭一下（bushi</del>
+（逃</p>
+</blockquote>
+<hr />
+<div style="break-before: page; page-break-before: always;"></div><h1 id="番外酸碱中和"><a class="header" href="#番外酸碱中和">番外：酸碱中和</a></h1>
+<p>突发奇想，把他全部混在一起</p>
+<p>白醋和小苏打反应，以普遍理性而论</p>
+<p>\[ CH_3COOH+NaHCO3 === CH_3COONa+H_2O+CO_2 \]</p>
+<p>会放出 \( CO_2 \)。</p>
+<p>当我们把一切混进去的时候，发现原来的表格：</p>
+<blockquote>
+<div class="table-wrapper"><table><thead><tr><th>植物</th><th>原来溶液颜色</th><th>滴入白醋中后</th><th>滴入苏打水中后</th><th>滴入矿泉水中后</th></tr></thead><tbody>
+<tr><td>紫甘蓝</td><td>紫色</td><td>粉红色</td><td>青绿色</td><td>紫色</td></tr>
+<tr><td>牵牛花</td><td>棕红色</td><td>嫩红色</td><td>茶绿色</td><td>淡棕色</td></tr>
+<tr><td>红萝卜</td><td>淡粉色</td><td>粉红色</td><td>白色（微紫）</td><td>淡粉色</td></tr>
+<tr><td>美人蕉</td><td>褐色</td><td>淡褐色</td><td>茶褐色</td><td>褐色</td></tr>
+</tbody></table>
+</div></blockquote>
+<p>所有的颜色变成了这样</p>
+<div class="table-wrapper"><table><thead><tr><th>植物</th><th>溶液颜色</th><th>后来的颜色</th></tr></thead><tbody>
+<tr><td>紫甘蓝</td><td>紫色</td><td>紫色</td></tr>
+<tr><td>牵牛花</td><td>棕红色</td><td>淡棕色</td></tr>
+<tr><td>红萝卜</td><td>淡粉色</td><td>淡粉色</td></tr>
+<tr><td>美人蕉</td><td>褐色</td><td>褐色</td></tr>
+</tbody></table>
+</div>
+<p>很显然，发生了中和反应</p>
+<p><img src="ex3/../assets/pH/IMG_20220809_111227.jpg" alt="" /></p>
+<p>和原来的无异，因此也可以说明酸碱中和的产物是中性的。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="金属生锈的条件"><a class="header" href="#金属生锈的条件">金属生锈的条件</a></h1>
+<p>该实验为时间 1 周的长期观察实验，挑选最具代表性的准备、第一天、倒数第三天与结果着重讲述。</p>
+<p>实验日期：2022-7-31 ~ 2022-8-6</p>
+<p>实验者：吴承宇</p>
+<p>详细请见下页。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="实验准备"><a class="header" href="#实验准备">实验准备</a></h1>
+<ol>
+<li>5个空瓶</li>
+<li>15个铁钉</li>
+<li>2根绳子</li>
+<li>一点点食盐溶液</li>
+<li>一点点白醋</li>
+</ol>
+<h2 id="实验准备步骤"><a class="header" href="#实验准备步骤">实验准备步骤</a></h2>
+<p>将 5 个瓶子按照 (I, II, III, IV, V) 的顺序使用蓝色胶带标记。</p>
+<div class="table-wrapper"><table><thead><tr><th>瓶子</th><th>内容</th></tr></thead><tbody>
+<tr><td>I</td><td>把洁净的铁钉放在干燥的矿泉水瓶里，拧紧瓶口</td></tr>
+<tr><td>II</td><td>把洁净的铁钉全部浸没在盛满煮沸过的水中的矿泉水瓶里，拧紧瓶口</td></tr>
+<tr><td>III</td><td>把洁净的铁钉放在盛有煮沸过的水中的矿泉水瓶中，一半浸入水中，把瓶口敞口放置</td></tr>
+<tr><td>IV</td><td>把洁净的铁钉放在盛有食盐水的矿泉水瓶中，一半浸入水中，把瓶口敞口放置 <del>（家里没有试管qwq</del></td></tr>
+<tr><td>V</td><td>把用白醋浸过的铁钉放在干燥的矿泉水瓶中，把瓶口敞口放置</td></tr>
+</tbody></table>
+</div>
+<p>其中，(III, IV)组使用绳子系在瓶口吊着。每组放置相同的 3 枚铁钉。</p>
+<p><img src="ex4/../assets/Fe/IMG_20220730_150334.jpg" alt="view" /></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="观察第一天"><a class="header" href="#观察第一天">观察第一天</a></h1>
+<p><img src="ex4/../assets/Fe/IMG_20220731_123347.jpg" alt="" /></p>
+<p>可以看到，第一个瓶子没有生锈。</p>
+<p>而然，第二个瓶子开始略微生锈，但是远没有第三个瓶子锈得厉害。第三个比第四个瓶子锈得更加厉害。</p>
+<p>第五个瓶子已经完全生锈。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="观察第四天"><a class="header" href="#观察第四天">观察第四天</a></h1>
+<p><img src="ex4/../assets/Fe/IMG_20220804_061251.jpg" alt="day4" /></p>
+<p>第四天的样子已经开始接近结果。第一瓶仍然似乎没有生锈。其他的正在加剧</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="观察结果"><a class="header" href="#观察结果">观察结果</a></h1>
+<div class="table-wrapper"><table><thead><tr><th>天数</th><th>第一个瓶子</th><th>第二个瓶子</th><th>第三个瓶子</th><th>第四个瓶子</th><th>第五个瓶子</th></tr></thead><tbody>
+<tr><td>第一天</td><td>没有生锈</td><td>基本没有生锈</td><td>浸入水中的部分开始生锈</td><td>浸入水中的部分略微生锈</td><td>完全生锈</td></tr>
+<tr><td>第二天</td><td>没有生锈</td><td>部分生锈</td><td>浸入水中的部分部分生锈</td><td>浸入水中的部分开始生锈</td><td>完全生锈</td></tr>
+<tr><td>第三天</td><td>没有生锈</td><td>部分生锈</td><td>浸入水中的部分部分生锈</td><td>浸入水中的部分部分生锈</td><td>完全生锈</td></tr>
+<tr><td>第四天</td><td>没有生锈</td><td>部分生锈</td><td>浸入水中的部分几乎全锈</td><td>浸入水中的部分部分生锈</td><td>完全生锈</td></tr>
+<tr><td>第五天</td><td>基本没有生锈</td><td>基本生锈</td><td>浸入水中的部分全锈</td><td>浸入水中的部分几乎全锈</td><td>完全生锈</td></tr>
+<tr><td>第六天</td><td>基本没有生锈</td><td>基本生锈</td><td>浸入水中的部分全锈</td><td>浸入水中的部分几乎全锈</td><td>完全生锈</td></tr>
+<tr><td>第七天</td><td>基本没有生锈</td><td>完全生锈</td><td>浸入水中的部分全锈</td><td>浸入水中的部分全锈</td><td>完全生锈</td></tr>
+</tbody></table>
+</div>
+<p>其中，铁钉的环境如实验介绍所说。</p>
+<p>得出，洁净的铁钉的生锈需要空气和水分。如果没有足够的水分，铁钉生锈速度极慢甚至无法生锈。
+同时，盐水的生锈速度比清水慢。
+但是经过浸泡后的铁钉生锈速度远大于洁净（的铁钉）。</p>
+<p>实验结果图</p>
+<div class="table-wrapper"><table><thead><tr><th>第一个瓶子</th><th>第二个瓶子</th><th>第三个瓶子</th><th>第四个瓶子</th><th>第五个瓶子</th></tr></thead><tbody>
+<tr><td><img src="ex4/../assets/Fe/IMG_20220806_124137.jpg" alt="bottle1" /></td><td><img src="ex4/../assets/Fe/IMG_20220806_124144.jpg" alt="bottle2" /></td><td><img src="ex4/../assets/Fe/IMG_20220806_124150.jpg" alt="bottle3" /></td><td><img src="ex4/../assets/Fe/IMG_20220806_124154.jpg" alt="bottle4" /></td><td><img src="ex4/../assets/Fe/IMG_20220806_124159.jpg" alt="bottle5" /></td></tr>
+</tbody></table>
+</div><div style="break-before: page; page-break-before: always;"></div><h1 id="生活中的防锈"><a class="header" href="#生活中的防锈">生活中的防锈</a></h1>
+<p>按照要求，我查阅了生活中的防锈方法。总结如下：</p>
+<ol>
+<li>电冰箱外壳<u>使用铝合金壳体</u></li>
+<li>菜刀<u>擦干后放回</u></li>
+<li>剪刀<u>刷漆防护</u></li>
+<li>圆珠笔的前面部分<u>涂油</u></li>
+<li>部分杯子等使用<u>不锈钢</u>（碳和铁的混合物）</li>
+</ol>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+
+            </nav>
+
+        </div>
+
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+
+        <script type="text/javascript">
+        window.addEventListener('load', function() {
+            MathJax.Hub.Register.StartupHook('End', function() {
+                window.setTimeout(window.print, 100);
+            });
+        });
+        </script>
+
+    </body>
+</html>
