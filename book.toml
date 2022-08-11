@@ -1,0 +1,9 @@
+[book]
+authors = ["Wu Chengyu"]
+language = "en"
+multilingual = false
+src = "src"
+title = "暑假实验报告合集 By 吴承宇"
+
+[output.html]
+mathjax-support = true
